@@ -2,7 +2,7 @@ import requests
 import json
 
 
-APIKEY = "0102effbcf62dbfc8581c9f46cbc7159"
+APIKEY = ""
 lon = '121.5319'
 lat = '25.0486'
 url = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&' + 'lon=' + lon +'&appid=' + APIKEY +'&units=metric'
@@ -17,7 +17,7 @@ temp_max = round(data['main']['temp_max'], 1)
 msg = (f"\n地區 {data['name']}\n目前溫度 {temp}\n體感溫度 {feels_like}\n最高溫 {temp_max} \n最低溫 {temp_min}")
 
 url = 'https://notify-api.line.me/api/notify'
-token = "OQEjcAIoY4ewNLVB96VmsJl30I9ptgyOpAnnJOEK1aX"
+token = ""
 headers = {
     'Authorization': 'Bearer ' + token    # 設定權杖
 }
